@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Nutzungstatisik</title>
+  <!-- <meta name="description" content="">
+  <meta name="author" content=""> -->
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="js/Chart.bundle.js" defer></script>
+  <script type="text/javascript" src="js/main.js" defer></script>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container" style="margin-top: 5%">
+    <h4>Statistiken der App Nutzung</h4>
+    <form>
+      <div class="row">
+        <div class="eight columns">
+          <input class="u-full-width" type="text" id="input_id" placeholder="ID des Probanden"/>
+        </div>
+        <div class="four columns">
+          <button class="u-full-width button-primary" id="btn_submit" type="button">Absenden</button>
+        </div>
+      </div>
+    </form>
+    <div id="vis_container" class="invisible">
+      <div class="row">
+        <canvas class="twelve columns" id="visualization" />
+      </div>
+
+      <form>
+        <div class="row">
+          <div class="six columns offset-by-three">
+            <div class="flex-container">
+              <button class="button-primary" type="button" id="btn_prev"> << </button>
+              <button class="button" type="button" id="btn_next" disabled="true"> >> </button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
